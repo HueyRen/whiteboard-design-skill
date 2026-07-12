@@ -2,6 +2,12 @@
 # generated wireframes are personal/confidential and should never be committed.
 sessions/
 
+# notion_sync.py writes here by default — the live transcript is personal/confidential.
+Meeting.md
+
+# Never commit tokens if someone drops a local env file instead of exporting the var.
+.env
+
 # OS cruft
 .DS_Store
 references/
