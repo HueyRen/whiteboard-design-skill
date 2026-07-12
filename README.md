@@ -25,6 +25,16 @@ Don't have Notion, or prefer another transcription tool? Just keep `Meeting.md` 
 
 **Privacy:** `notion_sync.py` never hardcodes your token or page ID — it reads `$NOTION_TOKEN` (or macOS Keychain) and takes the page ID as a CLI argument. `Meeting.md` is gitignored at the repo root, so a live transcript never ends up committed even if you forget and run `git add .`.
 
+## Recommended: a GitHub repo per session, before wireframing
+
+Before you get to Step 7 (`/wb lofi` / `/wb prototype`), it's worth creating a dedicated GitHub repo for that session:
+
+1. Once Steps 1–6 are filled in — problem, users, context, assumptions, chosen direction, flow — create a new (private is fine) GitHub repo for **this session only**, separate from the skill repo itself.
+2. Push everything the session has produced so far into it: `sessions/<slug>/template.html`, `Meeting.md`, `company-notes.md` if you have one.
+3. Point Claude at that repo for the wireframing/prototyping step instead of working against loose local files. Real-time prototyping goes noticeably better against a live repo — you get commit history as screens evolve, can branch to compare lo-fi vs. hi-fi or Direction A vs. B without overwriting each other, and Claude has a clean, versioned source of truth to read from and write back to.
+
+This is optional — `/wb lofi` and `/wb prototype` work fine against the local `sessions/` folder without it — but it pays off once you're iterating across multiple screens or directions and want a record of what changed.
+
 ## What it does
 
 - **Practice mode** — give it a prompt (or let it pick one from the practice bank), and it walks you through Why → Who → Context → Assumptions → Ideation → Flow → Solution → Summary, one step at a time, catching blind spots and modeling what to say out loud.
