@@ -34,7 +34,9 @@ Before starting the interview (or a practice run) — not just before wireframin
 
 This is optional — `/wb lofi` and `/wb prototype` work fine against the local `sessions/` folder without it — but it pays off once you're iterating across multiple screens or directions and want a record of what changed.
 
-**Recommended: use Claude Design for the wireframing/prototyping step.** Connect the session repo in Claude Design and do Step 7 there instead of working against loose local files. Real-time prototyping goes noticeably better against a live repo — you can review the commit history as screens evolve, branch to compare lo-fi vs. hi-fi or Direction A vs. B without overwriting each other, and Claude has a clean, versioned source of truth to read from and write back to.
+## Recommended: use Claude Design for wireframing/prototyping
+
+Connect the session repo in Claude Design and do Step 7 there instead of working against loose local files. Real-time prototyping goes noticeably better against a live repo — you can review the commit history as screens evolve, branch to compare lo-fi vs. hi-fi or Direction A vs. B without overwriting each other, and Claude has a clean, versioned source of truth to read from and write back to.
 
 ## What it does
 
